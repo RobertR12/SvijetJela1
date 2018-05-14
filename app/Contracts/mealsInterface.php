@@ -5,14 +5,14 @@
 
 interface mealsInterface {
 
-    public function selectAll($request);
-    public function setLang($request);
-    public function checkId($request, $meals);
-    public function checkCat($request, $meals);
-    public function checkTag($request, $meals);
-    public function checkWith($request, $meals);
-    public function checkDiff_time($request, $meals);
-    public function checkPerP($request, $meals);
+    //public function setLang($langId);
+    public function selectAll();
+    public function checkId($id);
+    public function checkCat($catId);
+    public function checkTag($tagId);
+    public function checkWith($meals);
+    public function checkDiff_time($diffTime);
+    public function checkPerP($perPage);
     public function returnResults($meals);
 }
 

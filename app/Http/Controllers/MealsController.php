@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+namespace App\Repositories;
+
 use App\Http\Controllers\Controller;
 
 use App\Meal;
@@ -10,8 +12,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class MealsController extends Controller
 {
-
-    private $meals;
 
     public function __construct(mealsInterface $meals) {
 
